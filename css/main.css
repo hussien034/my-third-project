@@ -746,7 +746,7 @@ footer{
     .arrow{
         position:fixed;
         top:90%;
-        left:90% !important;
+        left:85% !important;
          z-index: 999999;
     }
 }
