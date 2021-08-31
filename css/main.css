@@ -1,0 +1,768 @@
+*{
+    font-family: 'Poppins', sans-serif;
+
+}
+#home{
+    background:url(../img/hero-bg.png); background-position: center center; background-size: 100% 100%; background-repeat: no-repeat;
+    height:90vh;
+    display: flex;
+}
+#home .navbar ul li a{
+    color: black;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+.navbar-brand{
+    font-size:30px;
+    font-weight:600;
+}
+.dot{
+    color: blueviolet;
+}
+.nav-bord{
+    border:1px solid blueviolet;
+    visibility: hidden;
+    transition: all 0.2s;
+}
+#home .nav-item:hover a{
+    color: blueviolet;
+}
+.nav-item:hover .nav-bord{
+    visibility: visible;
+    animation: nav 0.2s alternate;
+}
+@keyframes nav{
+    10%{
+        width:10%;
+    }
+    20%{
+        width:20%;
+    }
+    30%{
+        width:30%;
+    }
+    40%{
+        width:40%;
+    }
+    50%{
+        width:50%;
+    }
+    60%{
+        width:60%;
+    }
+    70%{
+        width:70%;
+    }
+    80%{
+        width:80%;
+    }
+    90%{
+        width:90%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.btn-1{
+    border: 1px solid #106eea ;
+    background-color: #106eea;
+    color: white;
+    padding:10px 25px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.btn-1:hover{
+    background-color: #247CF0;
+}
+.btn-2{
+    background-color:transparent;
+    border: transparent;
+    padding: 10px 25px;
+    transition: all 0.5s;
+}
+#home .btn-2 .far{
+    color:#106eea;
+    font-size: 30px;
+   
+}
+.btn-2:hover{
+    color:#106eea ;
+}
+#home h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+#home p{
+    font-size:20px;
+    color:#555555;
+}
+.blue-cap{
+    color: 106eea;
+}
+/*//////////////////////the end of home*/
+#card-icon{
+    background-color: #F5F7FA;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+#card-icon h2{
+    font-size:16px;
+    font-weight:600;
+}
+.box-icon{
+    padding:40px;
+    line-height:25px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    background: #fff;
+}
+.box-icon::before{
+    content: "";
+    background: #cbe0fb;
+    position: absolute;
+    top:100%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+}
+
+.box-icon:hover::before{
+    background:wheat;
+    top: 0;
+}
+#card-icon .box-icon .home-icon{
+    font-size:40px;
+    color: #106EEA;
+    border: 0px !important;
+    padding:10px 0px !important;
+    border-radius: 0% !important;
+}
+#card-icon p{
+    font-size:14px;
+    color:#555555;
+}
+/*the end of section*/
+/*-----ABOUT SECTION---------*/
+#about{
+    background-color:#F6F9FE;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.cent-about{
+    text-align: center;
+    padding:10px 0px;
+}
+.btn-3{
+    background-color: #e7f1fd;
+    color: #297DEC;
+    border: 1px solid #e7f1fd;
+    padding:5px 10px;
+    font-size:14px;
+    border-radius:20px;
+    margin-bottom:10px;
+}
+.cent-about h3{
+    font-size: 30px;
+    font-weight:700;
+}
+.cent-about {
+    color: #444444;
+}
+.h3-col{
+    color:#106EEA ;
+}
+.about-style{
+    color:#444444 ;
+    margin-top: 50px;
+}
+.about-style h3{
+    font-size:25px;
+    font-weight:600;
+}
+.about-style p{
+    font-size:14px;
+}
+.about-style h4{
+    font-size:16px;
+}
+#about .about-icon .ab-icon1 ,.ab-icon2{
+    font-size:18px;
+    text-align: center;
+    background-color: white;
+    padding:20px;
+    border-radius: 50%;
+    color:#106EEA;
+    box-shadow:5px 5px px #F2F7FE ;
+    margin-right: 5px ;
+}
+#about .about-icon .ab-icon2{
+    padding:20px;
+    font-size:16px;
+    margin-left:-5px;
+    margin-top: 40px;
+}
+/*------the end of about */
+/* ---after about--------*/
+#prog{
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom:20px;
+}
+.progress{
+    height:8%;
+    margin-bottom:5px;
+}
+#prog p{
+    font-size:14px;
+}
+/*the end of proggggggggg*/
+#counter{
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+#counter .member{
+    background-color: #f1f6fe;
+    position: relative;
+    padding:10px 30px;
+    margin:10px;
+}
+#counter .member .ibm{
+    font-size:20px;
+    color: white;
+    padding:15px;
+    border: 5px solid white;
+    border-radius: 50%;
+    background-color: #106EEA;
+    position: absolute;
+    bottom:80%;
+    transform: translateX(-30px);
+}
+#counter p{
+    font-size:14px;
+    color:#444444;
+}
+#counter h4{
+    font-size:35px;
+}
+/*the end of counter*/
+/* clients section*/
+#clients{
+    background-color: #f1f6fe;
+    margin-top: 50px;
+}
+#clients img{
+    transition: all 0.5s;
+}
+#clients img:hover{
+    transform: scale(1.2);
+}
+
+
+@media screen and (max-width:568px){
+    #clients img{
+        width: 20% !important;
+    }
+    #clients {
+        text-align: center;
+    }
+}
+@media screen and (min-device-width:768px) and (max-device-width: 960px) {
+    #clients img{
+        width: 25% !important;
+    }
+    #clients {
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-device-width:568px) and (max-device-width: 768px) { 
+    #clients img{
+        width: 25% !important;
+    }
+    #clients {
+        text-align: center;
+    }
+}
+/*the end of clients */
+/* the services section*/
+#services{
+    margin-top: 50px;
+    padding-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#services .serv-icons{
+    color:#106EEA ;
+    padding:25px;
+    font-size:18px;
+    background-color: #f1f6fe;
+    border-radius:5px;
+    border: 1px solid #e2eefd ;
+    margin-bottom:5px;
+    transition: all 0.5s;
+}
+#services .box{
+    padding:50px;
+    border: 1px solid #e2eefd;
+    transition: all 0.5s;
+}
+#services .box h4{
+    font-size:20px;
+    font-weight:700;
+    line-height:30px;
+    transition: all 0.5s;
+}
+#services .box p{
+    font-size: 12px;
+    color:#444444;
+}
+#services .box:hover h4 {
+    color:#106EEA ;
+}
+#services .box:hover .serv-icons{
+    border: 1px solid  #106EEA;
+    color:#106EEA ;
+
+}
+#services .box:hover {
+   box-shadow: 10px 10px 20px #e2eefd ;
+
+}
+/*---the end of service-----*/
+/*------the slider-----------*/
+#slider img{
+    width:8%;
+}
+@media screen and (max-width:568px) {
+    #slider img{
+        width:30%;
+    }
+    #slider{
+        height: 100vh;
+    }
+    .carousel-inner{
+        height: 100% !important;
+    }
+    
+}
+#slider{
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+    url(../img/testimonials-bg.jpg); background-position: center center; background-size: 100% 100%;
+    padding:20px;
+}
+#slider p ,h5{
+    color: white;
+}
+#slider p{
+    font-size:14px;
+}
+#slider h5{
+    font-size:18px;
+    font-weight: 700;
+}
+.img-car{
+    position: relative;
+}
+.carousel-caption{
+    margin-top:50px !important;
+    position: absolute;
+    overflow: visible;
+    top:50%;
+}
+.carousel-indicators button{
+    border-radius:50%;
+    color: white;
+}
+.row-cont{
+    width:95%;
+    margin: auto;
+}
+#portflio{
+    margin-top:50px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+.nav-port li{
+    list-style-type: none;
+}
+.nav-port ul{  
+    display: flex;
+    justify-content: center;
+}
+.nav-port a{
+    text-decoration: none;
+    margin: 0px 15px;
+    color: black;
+    font-weight:600;
+    transition: all 0.5s;
+}
+.nav-port ul li .active-a {
+    color: blue;
+}
+.nav-port a:hover{
+    color: #106EEA;
+}
+.member{
+    width:98%;
+    margin: auto;
+}
+.member img{
+    padding:10px;
+    width:100%;
+}
+.cont-member{
+    position: relative;
+}
+.img-hover{
+    position: absolute;
+    top:100%;
+    bottom:0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    height: 100%;
+    transition: all 0.5s;
+}
+.cont-member:hover .img-hover{
+    top:70%;
+    background-color: white;
+    opacity:0.9;
+    width:85%;
+    height:19%;
+    margin: auto;
+}
+@media screen and (min-device-width:568px) and (max-device-width: 768px) { 
+    .member{
+        display: inline-block !important;
+    }
+}
+@media  screen and (max-width:568px) {
+   .member{
+       display: inline-block !important;
+   }
+}
+.img-cont h4,p{
+   font-size: 14px;
+}
+.img-cont p{
+    color:mediumturquoise;
+}/*the end of portflioooooooooo*/
+#team{
+    background-color: #F6F9FE;
+    padding-top: 50px;
+
+}
+
+.team-box h4{
+    font-size: 16px;
+    font-weight:600;
+}
+.team-box p{
+    color: #aaaaaa;
+}
+.team{
+    position: relative;
+}
+.team-hover{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    text-align: center;
+    transition: all 0.2s;
+}
+.team:hover .team-hover{
+   top: 60%;
+   opacity:0.9;
+}
+@media screen and (max-width:768px) {
+   #team .team:hover .team-hover{
+        top:40% !important;
+        opacity:0.9;
+     }
+}
+.team-icon{
+    background-color: #106eea;
+    padding:13px;
+    margin: 0px 4px;
+    border-radius: 10px;
+    color: white;
+}
+/*the end of team -----------------*/
+.number{
+    position: relative;
+}
+.d-num{
+    position: absolute;
+    top:-10%;
+    left:23%;
+    transform: translateX(-50%);
+}
+@media screen and(max-width:568px) {
+    .number{
+        position: relative;
+    }
+    .d-num{
+    position: absolute;
+    top:-100% !important;
+    left:10% !important;
+    transform: translateX(-50%) !important;
+}
+}
+.card h5{
+    color: blueviolet;
+    font-size: 40px;
+}
+.text{
+    color:#aaaaaa !important;
+    font-size: 16px !important;
+}
+.d-num p{
+    color:blueviolet ;
+    font-size: 20px;
+}
+.top-card{
+    background-color:#f8f8f8;
+    font-weight: 500;
+}
+.button-card{
+    background-color:#f8f8f8;
+}
+.throught{
+    text-decoration: line-through;
+    color:#aaaaaa ;
+}
+.card-description{
+    padding:10px 30px;
+}
+.btn-4{
+    border: 1px solid #106eea;
+    background-color: #106eea;
+    color:white;
+    padding:5px 25px;
+    border-radius:5px;
+}
+.card-2 .top-card{
+    background-color: #106EEA;
+    color: white;
+}
+.top-card{
+    position: relative;
+    overflow: hidden;
+}
+.card-4{
+  overflow: hidden;
+}
+.page{
+    width:40%;
+    background-color:#106EEA ;
+    transform: rotate(45deg);
+    color: white !important;
+    padding:0px 10px !important;
+    position: absolute;
+    left:70%;
+    top:20;
+}
+.page h5{
+    font-size: 12px !important;
+    font-weight: 200;
+    color: white !important;
+}
+/*the end of pricing------*/
+#asked{
+    background-color: #F6F9FE;
+    margin-top: 50px;
+    padding:50px 0px;
+    padding-bottom: 50px;
+}
+.accordion-button:hover{
+    color: #106EEA;
+}
+.accordion-button{
+    transition: all 0.5s;
+    color: #444444;
+    font-size: 18px;
+    font-weight: 400;
+}
+/*-------------------*/
+#contact{
+    background-color: #FAFAFA;
+    padding-top: 50px;
+}
+.location-icon h5,p{
+    color: black;
+    font-size: 16px;
+    line-height: 30px;
+    color:444444 ;
+}
+.email h5,p{
+    color: black;
+    font-size: 16px;
+    line-height: 30px;
+    color:444444 ;
+}
+.call h5 ,p{
+    color: black;
+    font-size: 16px;
+    line-height:30px;
+    color:444444 ;
+}
+.location-icon{
+    background-color:white;
+    ;
+    padding:20px 40px !important;
+}
+
+.email{
+    background-color:white;
+    padding:20px;
+}
+.call{
+    background-color:white;
+    padding:20px;
+}
+.contact-icons{
+    padding:10px;
+    font-size: 30px;
+    border: 1px dotted #106EEA ;
+    border-radius:40% ;
+    color:#106EEA ;
+}
+.cont-input{
+    padding:50px;
+    text-align: center;
+}
+.cont-input input,textarea{
+    padding:8px 20px;
+    margin:10px 0px;
+    width: 100%;
+    border: 1px solid #CED4DA;
+}
+.cont-input{
+    background-color: white;
+}
+.inputs input{
+    width:45% !important;
+}
+.btn-5{
+    background-color: #106EEA;
+    border: 1px solid #106EEA;
+    color:white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+/*---the end of contact*/
+#join{
+    text-align: center;
+    background-color: #F1F6FE;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+#join h6{
+    font-size: 20px;
+    font-weight:700;
+    line-height: 50px;
+}
+.cont-join input{
+    width:35%;
+    border: 1px solid white;
+    padding:10px 20px;
+}
+.btn-6{
+    background-color: #106EEA;
+    border: 1px solid #106EEA;
+    color:white;
+    padding: 10px 20px;
+    margin-left:-5%;
+}
+#links{
+    padding-top: 50px;
+}
+#links h6{
+    font-size:14px;
+    font-weight: 600;
+}
+#links a{
+    text-decoration:none;
+    color:#777777;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+#links p{
+    color: #777777;
+    font-size:14px;
+}
+.our-icon{
+    padding:10px;
+    border-radius:5px;
+    color:white;
+    background-color:#106EEA ;
+    transition: all 0.5s;
+}
+ #links .fas {
+    color:#106EEA;
+    font-size: 12px;
+    margin-top:3px;
+    padding-right:5px;
+}
+#links a:hover{
+    color: #106EEA;
+}
+#links .our-icon:hover{
+    background-color: #3B8AF2;
+}
+footer{
+    background-color:#F1F6FE ;
+    padding:15px;
+}
+.foot p{
+    font-size: 14px;
+}
+.foot span{
+    color:#3B8AF2 ;
+}
+.arrow{
+    position:fixed;
+    top:90%;
+    left:95%;
+    background-color: #3B8AF2;
+    padding:17px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:568px){
+    .arrow{
+        position:fixed;
+        top:90%;
+        left:90% !important;
+    }
+}
+
+@media screen and (min-device-width:568px) and (max-device-width: 768px) { 
+    .arrow{
+        position:fixed;
+        top:90%;
+        left:90% !important;
+    }
+}
+@media screen and (min-device-width:768px) and (max-device-width: 960px) {
+    .arrow{
+        position:fixed;
+        top:90%;
+        left:90% !important;
+    }
+}
+.arrow .fas{
+    color: white;
+}
